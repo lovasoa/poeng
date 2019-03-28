@@ -1,4 +1,10 @@
 # poeng
+## setup
+### setting up the server
+obviously, you need rust installed (visit http://rustup.rs if you don't have it installed yet)
+server setup is as simple as ```cargo run 0.0.0.0:4321``` and entering the ip of the server into the client's script.js file
+the client can then be served from a simple http server (e.g. ```sudo python3 -m http.server 80```) or copied to another pc
+
 ## protocol
 communication happens over websockets
 all messages (except register) have to be prefixed with the player id
