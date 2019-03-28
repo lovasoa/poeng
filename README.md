@@ -1,6 +1,5 @@
 # poeng
 ## setup
-### setting up the server
 obviously, you need rust installed (visit http://rustup.rs if you don't have it installed yet)
 
 server setup is as simple as ```cargo run 0.0.0.0:4321``` and entering the ip of the server into the client's script.js file
