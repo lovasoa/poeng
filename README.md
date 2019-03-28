@@ -1,4 +1,7 @@
 # poeng
+## what is this
+a simple multiplayer pong game server, written by a rust beginner who is looking for feedback on his (probably very ugly) code
+
 ## setup
 obviously, you need rust installed (visit http://rustup.rs if you don't have it installed yet)
 
