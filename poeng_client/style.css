@@ -1,0 +1,40 @@
+body {
+	color: black;
+	background-color: white;
+	font-family: monospace;
+	font-size: 28px;
+	margin: 1em;
+}
+
+#play-area {
+	position: absolute;
+	font-size: 4px;
+	border: solid black;
+	border-width: 2em 0 2em 0;
+	display: none;
+}
+
+#play-area div {
+	position: relative;
+	background-color: black;
+	transition: all 60ms;
+}
+
+.player {
+	width: 2em;
+}
+
+#left-player {
+	float: left;
+}
+
+#right-player {
+	float: right;
+}
+
+#ball {
+	width: 2em;
+	height: 2em;
+	margin-top: -1em;
+	margin-left: -1em;
+}
