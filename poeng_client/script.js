@@ -8,7 +8,7 @@ const ball = document.getElementById("ball");
 
 const server = "ws://localhost:4321";
 let ws;
-let refreshInterval;
+let playing = false;
 
 const data = {
 	playerId: "",
@@ -117,6 +117,13 @@ const handleResponse = (response) => {
 		default:
 			debug("could not parse response");
 	}
+}
+
+function tick() {
+		sendMessage("points");
+		sendMessage("opponent");
+		sendMessage("ball");
+    if (playing) requestAnimationFrame(tick);
 }
 
 const startGame = () => {
